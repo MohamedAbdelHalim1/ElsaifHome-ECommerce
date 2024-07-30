@@ -41,6 +41,8 @@ Route::post('stuff/logout', [StuffAuthController::class, 'logout'])->name('stuff
 // Routes for regular users (using 'web' guard)
 Route::middleware('auth:web')->group(function () {
     Route::get('/home', [HomeController::class, 'index'])->name('home');
+    Route::get('/about-us', [HomeController::class, 'about_us'])->name('about');
+
 });
 
 // Routes for staff members (using 'stuff' guard)

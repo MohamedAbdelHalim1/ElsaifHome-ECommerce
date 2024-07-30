@@ -37,7 +37,7 @@
                                 <a class="nav-link active" aria-current="page" href="index.html">الرئيسية</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="about-us.html">من نحن</a>
+                                <a class="nav-link" href="{{route('about')}}">من نحن</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="products.html">المنتجات</a>
@@ -122,7 +122,7 @@
                                     <a class="nav-link" aria-current="page" href="index.html">الرئيسية</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="about-us.html">من نحن</a>
+                                    <a class="nav-link" href="{{route('about')}}">من نحن</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="products.html">المنتجات</a>
