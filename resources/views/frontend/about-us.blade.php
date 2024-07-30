@@ -4,10 +4,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elseif-Home</title>
+    <title>About Us</title>
     <link rel="website icon" type="png" href="assets/images/B2B-Logo.png">
     <link rel="stylesheet" href="assets/css/bootstrap.css">
-    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/about-us.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -18,7 +18,6 @@
 </head>
 
 <body>
-
     <header class="rtl">
         <div class="big-nav pc">
             <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -68,27 +67,21 @@
         </div>
 
         <div class="row justify-content-end">
-            <div class="col-xl-9">
-                <div class="elementor-background-slideshow">
-                </div>
+            <div class="col-xl-9 sub-main">
+                <img src="assets/images/about-us-banner.jpg" style="width: 100%;">
             </div>
 
-            <div class="banner-box shadow-lg p-5 rounded-1">
+            <div class="banner-box shadow-lg p-5 rounded-1 text-center">
                 <h1 class="mb-3">
-                    برنامج تجھیز
-                    <span class="sentence">أفضل</span>
-                    الفنادق والمطاعم
+                    من نحن
                 </h1>
-                <p class="lh-base fw-semibold">
-                    برنامج متكامل مصمم خصیصاً لإدارة كافة مستلزمات الفنادق والمطاعم بمختلف أنواعھا
-                    وأحجامھا بطریقة مرنة وسھلة وسریعة ومنظمة وقویة في نفس الوقت.
-                </p>
-
-                <div class="d-flex justify-content-start">
-                    <button type="button" class="btn rounded-1 ms-3 text-white fw-bolder p-3"
-                        style="background-color: #b82c2c;">تحميل الكتالوج</button>
-                    <button type="button" class="btn rounded-1 text-white fw-bolder p-3"
-                        style="background-color: #242e40;">تواصل معنا</button>
+                <div class="d-flex justify-content-center">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="index.html">الرئيسية</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">من نحن</li>
+                        </ol>
+                    </nav>
                 </div>
             </div>
         </div>
@@ -110,11 +103,11 @@
                         aria-labelledby="offcanvasDarkNavbarLabel">
                         <div class="offcanvas-header">
                             <button type="button" class="btn-close btn-close-dark" data-bs-dismiss="offcanvas"
-                            aria-label="Close">
-                        </button>   
+                                aria-label="Close">
+                            </button>
                             <h5 class="offcanvas-title mt-3" id="offcanvasDarkNavbarLabel">
                                 <img src="assets/images/B2B Logo-04.png" class="logo-header">
-                            </h5>                                            
+                            </h5>
                         </div>
                         <div class="offcanvas-body">
                             <ul class="navbar-nav">
@@ -142,265 +135,114 @@
 
     </header>
 
-    <section class="rtl numbers" style="background-color: rgb(246, 246, 246);">
+    <section class="rtl mt-xl-5 mt-lg-5 mt-md-5 about-us">
         <div class="container text-center">
-            <div class="counter-container d-flex justify-content-center">
-                <div class="counter-item">
-                    <span class="icon">
-                        <i class="fa-solid fa-calendar"></i>
-                    </span>
-                    <br>
-                    <span class="counter" data-stop="1957">1800</span>
-                    <h3 class="label">منذ</h3>
-                </div>
-                <div class="counter-item">
-                    <span class="icon">
-                        <i class="fa-solid fa-users"></i>
-                    </span>
-                    <br>
-                    <sup class="plus">+</sup>
-                    <span class="counter" data-stop="2000">1800</span>
-                    <h3 class="label">عميل</h3>
-                </div>
-                <div class="counter-item">
-                    <span class="icon">
-                        <i class="fa-solid fa-globe"></i>
-                    </span>
-                    <br>
-                    <sup class="plus">+</sup>
-                    <span class="counter" data-stop="11">0</span>
-                    <h3 class="label">بلد</h3>
-                </div>
-                <div class="counter-item">
-                    <span class="icon">
-                        <i class="fa-solid fa-shop-lock"></i>
-                    </span>
-                    <br>
-                    <span class="counter" data-stop="200">0</span>
-                    <h3 class="label">علامة تجارية</h3>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="brands-logo" id="partners">
-        <div class="container text-center">
-            <div class="col-xl-12">
-
-                <div class="text-center">
-                    <h2>
-                        علامتنا التجارية
+            <div class="row justify-content-center">
+                <div class="col-xl-6 my-auto mx-auto">
+                    <h2 style="line-height: 55px!important;">
+                        من نحن
                     </h2>
-                </div>
-                <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <div class="d-flex justify-content-center">
-                                <div style="width: 20%;">
-                                    <img src="assets/images/Trademarks/brandlogo1.png" style="width: 100%">
-                                </div>
-                                <div style="width: 20%;">
-                                    <img src="assets/images/Trademarks/brandlogo2.png" style="width: 100%;">
-                                </div>
-                                <div style="width: 20%;">
-                                    <img src="assets/images/Trademarks/brandlogo4.png" style="width: 100%;">
-                                </div>
-                                <div style="width: 20%;">
-                                    <img src="assets/images/Trademarks/brandlogo1.png" style="width: 100%;">
-                                </div>
-                                <div style="width: 20%;">
-                                    <img src="assets/images/Trademarks/brandlogo5.png" style="width: 100%;">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="d-flex justify-content-center">
-                                <div style="width: 20%;">
-                                    <img src="assets/images/Trademarks/brandlogo6.png" style="width: 100%">
-                                </div>
-                                <div style="width: 20%;">
-                                    <img src="assets/images/Trademarks/brandlogo7.png" style="width: 100%;">
-                                </div>
-                                <div style="width: 20%;">
-                                    <img src="assets/images/Trademarks/brandlogo9.png" style="width: 100%;">
-                                </div>
-                                <div style="width: 20%;">
-                                    <img src="assets/images/Trademarks/brandlogo13.png" style="width: 100%;">
-                                </div>
-                                <div style="width: 20%;">
-                                    <img src="assets/images/Trademarks/brandlogo14.png" style="width: 100%;">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="d-flex justify-content-center">
-                                <div style="width: 20%;">
-                                    <img src="assets/images/Trademarks/brandlogo3.png" style="width: 100%">
-                                </div>
-                                <div style="width: 20%;">
-                                    <img src="assets/images/Trademarks/brandlogo8.png" style="width: 100%;">
-                                </div>
-                                <div style="width: 20%;">
-                                    <img src="assets/images/Trademarks/brandlogo10.png" style="width: 100%;">
-                                </div>
-                                <div style="width: 20%;">
-                                    <img src="assets/images/Trademarks/brandlogo12.png" style="width: 100%;">
-                                </div>
-                                <div style="width: 20%;">
-                                    <img src="assets/images/Trademarks/brandlogo15.png" style="width: 100%;">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="categories rtl">
-        <div class="container text-center">
-            <div class="row justify-content-center mb-2">
-                <div class="col-xl-6 col-lg-6 col-lg-8">
-                    <h2>
-                        أكتشف مجموعتنا
-                    </h2>
-                    <p class="mt-3">
-                        العميل مهم جدًا، العميل سيتبعه العميل. كأرض الأرض الحداد ولا عريف الأرض وسادة الأسد.
-                        العميل سيتبعه العميل. كأرض الأرض الحداد ولا عريف الأرض وسادة
+                    <p class="mt-4">
+                        السيف هوم أحد أكبر الشركات الرائدة في مجال الأدوات والأواني المنزلية وأدوات الضيافة والاجهزة
+                        الكهربائية
+                        تأسست في 1957 وتنفرد بتقديم منتجات عالية الجودة وتصاميم تلبي كل احتياجات الفنادق والمطاعم.
                     </p>
                 </div>
             </div>
-            <div class="pc">
-                <div class="gallery-category">
-                    <div class="slide">
-                        <div class="layer1">
-                            <img src="assets/images/categories-banners1.jpg" class="rounded-1" style="width: 100%;">
-                            <div class="layer2 rounded-1">
-                                <h3>
-                                    أواني الضيافة
-                                </h3>
-                                <button class="btn button-categ w-50 p-3">رؤية المزيد</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slide">
-                        <div class="layer1">
-                            <img src="assets/images/categories-banners2.jpg" class="rounded-1" style="width: 100%;">
-                            <div class="layer2 rounded-1">
-                                <h3>
-                                    أدوات المائدة
-                                </h3>
-                                <button class="btn button-categ w-50 p-3">رؤية المزيد</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slide">
-                        <div class="layer1">
-                            <img src="assets/images/categories-banners3.jpg" class="rounded-1" style="width: 100%;">
-                            <div class="layer2 rounded-1">
-                                <h3>
-                                    السخانات
-                                </h3>
-                                <button class="btn button-categ w-50 p-3">رؤية المزيد</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slide">
-                        <div class="layer1">
-                            <img src="assets/images/categories-banners4.jpg" class="rounded-1" style="width: 100%;">
-                            <div class="layer2 rounded-1">
-                                <h3>
-                                    أدوات الطبخ
-                                </h3>
-                                <button class="btn button-categ w-50 p-3">رؤية المزيد</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slide">
-                        <div class="layer1">
-                            <img src="assets/images/categories-banners5.jpg" class="rounded-1" style="width: 100%;">
-                            <div class="layer2 rounded-1">
-                                <h3>
-                                    الكهربائيات
-                                </h3>
-                                <button class="btn button-categ w-50 p-3">رؤية المزيد</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        </div>
+    </section>
 
-            <div class="mob">
-                <div class="gallery-category-mob">
-                    <div class="slide mb-3">
-                        <div class="layer1">
-                            <img src="assets/images/categories-banners1.jpg" class="rounded-1" style="width: 100%;">
-                            <div class="layer2 rounded-1">
-                                <h3>
-                                    أواني الضيافة
-                                </h3>
-                                <button class="btn button-categ w-50 p-3">رؤية المزيد</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slide mb-3">
-                        <div class="layer1">
-                            <img src="assets/images/categories-banners2.jpg" class="rounded-1" style="width: 100%;">
-                            <div class="layer2 rounded-1">
-                                <h3>
-                                    أدوات المائدة
-                                </h3>
-                                <button class="btn button-categ w-50 p-3">رؤية المزيد</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slide mb-3">
-                        <div class="layer1">
-                            <img src="assets/images/categories-banners3.jpg" class="rounded-1" style="width: 100%;">
-                            <div class="layer2 rounded-1">
-                                <h3>
-                                    السخانات
-                                </h3>
-                                <button class="btn button-categ w-50 p-3">رؤية المزيد</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slide mb-3">
-                        <div class="layer1">
-                            <img src="assets/images/categories-banners4.jpg" class="rounded-1" style="width: 100%;">
-                            <div class="layer2 rounded-1">
-                                <h3>
-                                    أدوات الطبخ
-                                </h3>
-                                <button class="btn button-categ w-50 p-3">رؤية المزيد</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slide mb-3">
-                        <div class="layer1">
-                            <img src="assets/images/categories-banners5.jpg" class="rounded-1" style="width: 100%;">
-                            <div class="layer2 rounded-1">
-                                <h3>
-                                    الكهربائيات
-                                </h3>
-                                <button class="btn button-categ w-50 p-3">رؤية المزيد</button>
-                            </div>
-                        </div>
+
+    <section class="rtl mt-xl-5 mt-lg-5 mt-md-5 mission">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-5 my-auto mx-auto">
+                    <h2 style="line-height: 55px!important;">
+                        رؤيتنا و مهمتنا
+                    </h2>
+                    <p class="mt-4">
+                        رؤيتنا تشكل الأساس لعلاقاتنا مع عملائنا و موردينا وموظفينا، حتى أصبحنا شريك موثوق في قطاع
+                        الفنادق والمطاعم.
+                    </p>
+                    <p class="mt-4">
+                        مهمتنا تقديم منتجات وخدمات استثنائية تلبي احتياجات الفنادق والمطاعم وتعزز تجربة العملاء وتساهم
+                        في نجاح المنشآت.
+                    </p>
+                    <ul>
+                        <li>
+                            <span class="fw-bolder" style="color: #b82c2c;">التميز والابتكار : </span> نلتزم بالتميز عبر
+                            تحسين وابتكار منتجاتنا وخدماتنا باستمرار، مما أكسبنا
+                            سمعة طيبة في الموثوقية والاتساق.
+                        </li>
+                        <li>
+                            <span class="fw-bolder" style="color: #b82c2c;">رضا العملاء : </span> نركز على رضا العملاء،
+                            ونسعى لتلبية احتياجاتهم وتجاوز توقعاتهم لضمان تقديم قيمة
+                            مستمرة.
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xl-5 my-auto mx-auto">
+                    <div>
+                        <img src="assets/images/our-mission-our-vision.jpg" class="rounded-1" style="width: 100%;">
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <section class="rtl mt-xl-5 mt-lg-5 mt-md-5 values">
+        <div class="container">
+            <div class="row justify-content-center box">
+                <div class="col-xl-5 my-auto mx-auto">
+                    <div>
+                        <img src="assets/images/our-values.jpg" class="rounded-1" style="width: 100%;">
+                    </div>
+                </div>
+                <div class="col-xl-6 my-auto mx-auto">
+                    <h2 style="line-height: 55px!important;">
+                        قيمنا
+                    </h2>
+                    <ul>
+                        <li>
+                            <span class="fw-bolder" style="color: #b82c2c;">الابتكار : </span> نحرص على تقديم أحدث
+                            التقنيات والمنتجات لتلبية احتياجات العملاء.
+                        </li>
+                        <li>
+                            <span class="fw-bolder" style="color: #b82c2c;">خدمة العملاء : </span> نهتم برضا كل عميل
+                            ونسعى لتلبية احتياجاتهم بأحترافية ودقة.
+                        </li>
+                        <li>
+                            <span class="fw-bolder" style="color: #b82c2c;">الثقة : </span> نسعى لبناء علاقات متينة مع
+                            عملائنا من خلال التواصل المستمر وتلبية توقعاتهم.
+                        </li>
+                    </ul>
+                    <p class="mt-4">
+                        رؤيتنا تشكل الأساس لعلاقاتنا مع عملائنا و موردينا وموظفينا، حتى أصبحنا شريك موثوق في قطاع
+                        الفنادق والمطاعم.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="rtl mt-xl-5 mt-lg-5 mt-md-5 sub-banner">
+        <div class="row justify-content-center text-center">
+            <div class="col-12 position-relative">
+                <img src="assets/images/sub-banner.jpg" style="width: 100%;" class="sub-banner-img">
+                <div class="position-absolute top-50 start-50 translate-middle mt-xl-4 mt-lg-4 mt-md-4">
+                    <h2 class="text-white">
+                        أدوات مطبخ رائعة لأي مطبخ
+                    </h2>
+                    <p class="text-white fw-light mt-3">
+                        من المهم الاعتناء بالمريض، وأن يتبعه المريض، لكن ذلك سيحدث في وقت يكون فيه الكثير من العمل
+                        والألم. فبالنسبة لأدق التفاصيل، لا يجوز لأحد أن يمارس أي عمل إلا إذا استفاد منه بعض الشيء. ولا
+                    </p>
+                    <button class="btn button-categ p-3">تسوق الان</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <section id="services" class="quality rtl mt-xl-5 mt-lg-5 mt-md-5">
         <div class="container">
@@ -480,251 +322,7 @@
         </div>
     </section>
 
-    <section class="popular-product rtl mt-xl-5 mt-lg-5 mt-md-5">
-        <div class="container text-center">
-            <div class="row justify-content-center mb-3">
-                <div class="col-xl-6 col-lg-6 col-lg-8">
-                    <h2>
-                        منتجاتنا
-                    </h2>
-                    <p class="mt-3">
-                        العميل مهم جدًا، العميل سيتبعه العميل. كأرض الأرض الحداد ولا عريف الأرض وسادة الأسد.
-                        العميل سيتبعه العميل. كأرض الأرض الحداد ولا عريف الأرض وسادة
-                    </p>
-                </div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-xl-3 mb-4">
-                    <img src="assets/images/new-set-of-black-saucepans-isolated-on-white.png"
-                        class="rounded-1 bg-secondary bg-opacity-10" style="width:280; height: 280px;">
-                    <div class="d-flex justify-content-start">
-                        <div>
-                            <h5>
-                                طقم سكاكين
-                            </h5>
-                            <button class="btn cart-button">
-                                اضافة الى السلة
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 mb-4">
-                    <img src="assets/images/new-set-of-black-saucepans-isolated-on-white.png"
-                        class="rounded-1 bg-secondary bg-opacity-10" style="width:280; height: 280px;">
-                    <div class="d-flex justify-content-start">
-                        <div>
-                            <h5>
-                                طقم سكاكين
-                            </h5>
-                            <button class="btn cart-button">
-                                اضافة الى السلة
-                            </button>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="col-xl-3 mb-4">
-                    <img src="assets/images/new-set-of-black-saucepans-isolated-on-white.png"
-                        class="rounded-1 bg-secondary bg-opacity-10" style="width:280; height: 280px;">
-                    <div class="d-flex justify-content-start">
-                        <div>
-                            <h5>
-                                طقم سكاكين
-                            </h5>
-                            <button class="btn cart-button">
-                                اضافة الى السلة
-                            </button>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="col-xl-3 mb-4">
-                    <img src="assets/images/new-set-of-black-saucepans-isolated-on-white.png"
-                        class="rounded-1 bg-secondary bg-opacity-10" style="width:280; height: 280px;">
-                    <div class="d-flex justify-content-start">
-                        <div>
-                            <h5>
-                                طقم سكاكين
-                            </h5>
-                            <button class="btn cart-button">
-                                اضافة الى السلة
-                            </button>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-xl-3 mb-4">
-                    <img src="assets/images/new-set-of-black-saucepans-isolated-on-white.png"
-                        class="rounded-1 bg-secondary bg-opacity-10" style="width:280; height: 280px;">
-                    <div class="d-flex justify-content-start">
-                        <div>
-                            <h5>
-                                طقم سكاكين
-                            </h5>
-                            <button class="btn cart-button">
-                                اضافة الى السلة
-                            </button>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="col-xl-3 mb-4">
-                    <img src="assets/images/new-set-of-black-saucepans-isolated-on-white.png"
-                        class="rounded-1 bg-secondary bg-opacity-10" style="width:280; height: 280px;">
-                    <div class="d-flex justify-content-start">
-                        <div>
-                            <h5>
-                                طقم سكاكين
-                            </h5>
-                            <button class="btn cart-button">
-                                اضافة الى السلة
-                            </button>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="col-xl-3 mb-4">
-                    <img src="assets/images/new-set-of-black-saucepans-isolated-on-white.png"
-                        class="rounded-1 bg-secondary bg-opacity-10" style="width:280; height: 280px;">
-                    <div class="d-flex justify-content-start">
-                        <div>
-                            <h5>
-                                طقم سكاكين
-                            </h5>
-                            <button class="btn cart-button">
-                                اضافة الى السلة
-                            </button>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="col-xl-3 mb-4">
-                    <img src="assets/images/new-set-of-black-saucepans-isolated-on-white.png"
-                        class="rounded-1 bg-secondary bg-opacity-10" style="width:280; height: 280px;">
-                    <div class="d-flex justify-content-start">
-                        <div>
-                            <h5>
-                                طقم سكاكين
-                            </h5>
-                            <button class="btn cart-button">
-                                اضافة الى السلة
-                            </button>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <!--
     
-        <section class="offers-banner">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-xl-6 col-lg-6">
-                    <a href="#">
-                        <img src="assets/images/offer-banner-1.jpg" class="rounded-1" style="width: 100%;">
-                    </a>
-                </div>
-                <div class="col-xl-6 col-lg-6">
-                    <a href="#">
-                        <img src="assets/images/offer-banner-2.jpg" class="rounded-1" style="width: 100%;">
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    
-    -->
-
-
-    <section class="rtl mt-xl-5 mt-lg-5 mt-md-5 sub-banner">
-        <div class="row justify-content-center text-center">
-            <div class="col-12 position-relative">
-                <img src="assets/images/sub-banner.jpg" style="width: 100%;" class="sub-banner-img">
-                <div class="position-absolute top-50 start-50 translate-middle mt-xl-4 mt-lg-4 mt-md-4">
-                    <h2 class="text-white">
-                        أدوات مطبخ رائعة لأي مطبخ
-                    </h2>
-                    <p class="text-white fw-light mt-3">
-                        من المهم الاعتناء بالمريض، وأن يتبعه المريض، لكن ذلك سيحدث في وقت يكون فيه الكثير من العمل
-                        والألم. فبالنسبة لأدق التفاصيل، لا يجوز لأحد أن يمارس أي عمل إلا إذا استفاد منه بعض الشيء. ولا
-                    </p>
-                    <button class="btn button-categ p-3">تسوق الان</button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="blogs rtl mt-xl-5 mt-lg-5 mt-md-5">
-        <div class="container">
-            <div class="row justify-content-center mb-3 text-center">
-                <div class="col-xl-6 col-lg-6 col-lg-8">
-                    <h2>
-                        قصص نجاح
-                    </h2>
-                    <p class="mt-3">
-                        العميل مهم جدًا، العميل سيتبعه العميل. كأرض الأرض الحداد ولا عريف الأرض وسادة الأسد.
-                        العميل سيتبعه العميل. كأرض الأرض الحداد ولا عريف الأرض وسادة
-                    </p>
-                </div>
-            </div>
-            <div class="row justify-content-center text-end mb-5">
-                <div class="col-xl-4">
-                    <img src="assets/images/air-fryer-oven-in-the-kitchen-black-modern-electric-deep-domestic-household-small-kitchen-applia (1).jpg"
-                        class="rounded-1" style="width:100%;">
-                    <h5>
-                        8 أدوات مطبخ رائعة تقلل وقت الطهي إلى النصف
-                    </h5>
-                    <small>
-                        <i class="fa-solid fa-clock ms-3"></i>
-                        <span>6 مايو 2022</span>
-                    </small>
-                    <p>
-                        ولكن لكي ترى من أين يأتي كل هذا الخطأ الناتج عن أولئك الذين يتهمون اللذة ويمتدحون الألم، سأكشف
-                        عن الأمر برمته، وتلك الأشياء ذاتها التي منها...
-                    </p>
-                </div>
-                <div class="col-xl-4">
-                    <img src="assets/images/close-up-of-caucasian-woman-washing-the-pans (1).jpg" class="rounded-1"
-                        style="width:100%;">
-                    <h5>
-                        6 نصائح لتنظيف المطبخ تستغرق خمس دقائق أو أقل
-                    </h5>
-                    <small>
-                        <i class="fa-solid fa-clock ms-3"></i>
-                        <span>6 مايو 2022</span>
-                    </small>
-                    <p>
-                        ولكن لكي ترى من أين يأتي كل هذا الخطأ الناتج عن أولئك الذين يتهمون اللذة ويمتدحون الألم، سأكشف
-                        عن الأمر برمته، وتلك الأشياء ذاتها التي منها...
-                    </p>
-                </div>
-                <div class="col-xl-4">
-                    <img src="assets/images/kitchen-knives-set-on-the-kitchen-table- (1).jpg" class="rounded-1"
-                        style="width:100%;">
-                    <h5>
-                        لماذا لا ينبغي عليك الاحتفاظ بسكاكين مطبخك في مكان خشبي
-                    </h5>
-                    <small>
-                        <i class="fa-solid fa-clock ms-3"></i>
-                        <span>6 مايو 2022</span>
-                    </small>
-                    <p>
-                        ولكن لكي ترى من أين يأتي كل هذا الخطأ الناتج عن أولئك الذين يتهمون اللذة ويمتدحون الألم، سأكشف
-                        عن الأمر برمته، وتلك الأشياء ذاتها التي منها...
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
     <section class="mt-xl-5 mt-lg-5 mt-md-5 rtl p-xl-5 p-lg-5 p-md-5 clients" style="background-color: #F6F6F6;">
         <div class="container text-center">
             <div class="row justify-content-center mb-5">
@@ -1047,83 +645,10 @@
         </div>
     </section>
 
-
-
-    <!-- شركاؤنااااااااا
-    
-       <section class="mt-5 rtl p-5" id="partners" style="background-color: rgb(246, 246, 246);">
-        <div class="container text-center">
-            <div class="row justify-content-center">
-                <h3 class="mb-5">
-                    شركاؤنا
-                </h3>
-                <div class="col-xl-12">
-                    <div id="carouselExampleCaptions" class="carousel slide">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <div class="d-flex justify-content-center">
-                                    <div style="width: 17%;">
-                                        <img src="assets/images/logos-4.png" style="width: 100%">
-                                    </div>
-                                    <div style="width: 17%;">
-                                        <img src="assets/images/logos-3.png" style="width: 100%;">
-                                    </div>
-                                    <div style="width: 17%;">
-                                        <img src="assets/images/logos-2.png" style="width: 100%;">
-                                    </div>
-                                    <div style="width: 17%;">
-                                        <img src="assets/images/logos-5.png" style="width: 100%;">
-                                    </div>
-                                    <div style="width: 17%;">
-                                        <img src="assets/images/logos-6.png" style="width: 100%;">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="d-flex justify-content-center">
-                                    <div style="width: 17%;">
-                                        <img src="assets/images/logos-7.png" style="width: 100%">
-                                    </div>
-                                    <div style="width: 17%;">
-                                        <img src="assets/images/logos-8.png" style="width: 100%;">
-                                    </div>
-                                    <div style="width: 17%;">
-                                        <img src="assets/images/logos-9.png" style="width: 100%;">
-                                    </div>
-                                    <div style="width: 17%;">
-                                        <img src="assets/images/logos-10.png" style="width: 100%;">
-                                    </div>
-                                    <div style="width: 17%;">
-                                        <img src="assets/images/logos-11.png" style="width: 100%;">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-                            data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-                            data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    
-    
-    
-    -->
-
     <footer class="rtl">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-xl-3 col-lg-3 col-md-3">
+                <div class="col-xl-3 col-lg-3">
                     <h6>روابط سريعة</h6>
                     <ul>
                         <li>
@@ -1148,7 +673,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-xl-3 col-lg-3 col-md-3">
+                <div class="col-xl-3 col-lg-3">
                     <h6>معلومات الاتصال</h6>
                     <ul>
                         <li>
@@ -1163,7 +688,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-xl-3 col-lg-3 col-md-3">
+                <div class="col-xl-3 col-lg-3">
                     <h6>مواقع التواصل الاجتماعي</h6>
                     <div class="d-flex justify-content-start">
                         <span style="width: 13%;">
@@ -1188,7 +713,7 @@
                         </span>
                     </div>
                 </div>
-                <div class="col-xl-3 col-lg-3 col-md-3">
+                <div class="col-xl-3 col-lg-3">
                     <h6>طرق الدفع</h6>
                     <div class="d-flex justify-content-start mb-3">
                         <span style="width: 14%;" class="me-3">
@@ -1232,13 +757,13 @@
                 </div>
             </div>
             <hr>
-            <div class="small-footer">
-                <div class="col-xl-3 col-lg-3 col-md-5 my-auto" style="overflow-y: hidden !important;">
+            <div class="row justify-content-between">
+                <div class="col-xl-3 my-auto">
                     <small class="text-white">
                         Copyright 2024 - Elseif-Home by Arena
                     </small>
                 </div>
-                <div class="col-xl-2 col-xl-2 col-md-4">
+                <div class="col-xl-2 ">
                     <img src="assets/images/logo-header.png" class="logo-footer">
                 </div>
             </div>
