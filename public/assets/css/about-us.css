@@ -387,6 +387,12 @@ footer .logo-footer {
         display: none;
     }
 
+    
+    .navbar-nav li
+    {
+        margin: 0px;
+    }
+
     h1 {
         font-size: 30px;
         line-height: 50px;

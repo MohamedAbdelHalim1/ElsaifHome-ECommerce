@@ -28,22 +28,30 @@ use App\Http\Controllers\Frontend\HomeController;
 
 Route::get('register', [UserAuthController::class, 'showRegisterForm'])->name('user.register');
 Route::post('register', [UserAuthController::class, 'register']);
-Route::get('/', [UserAuthController::class, 'showLoginForm'])->name('user.login');
+// Route::get('/', [UserAuthController::class, 'showLoginForm'])->name('user.login');
 Route::post('/', [UserAuthController::class, 'login']);
 Route::post('user/logout', [UserAuthController::class, 'logout'])->name('user.logout');
 
 
-Route::get('stuff/login', [StuffAuthController::class, 'showLoginForm'])->name('stuff.login');
-Route::post('stuff/login', [StuffAuthController::class, 'login']);
+Route::get('stuff/login', [StuffAuthController::class, 'showLoginForm'])->name('login');
+Route::post('stuff/login', [StuffAuthController::class, 'login'])->name('stuff.login');
 Route::post('stuff/logout', [StuffAuthController::class, 'logout'])->name('stuff.logout');
 
 
 // Routes for regular users (using 'web' guard)
-Route::middleware('auth:web')->group(function () {
-    Route::get('/home', [HomeController::class, 'index'])->name('home');
-    Route::get('/about-us', [HomeController::class, 'about_us'])->name('about');
+// Route::middleware('auth:web')->group(function () {
+    
 
-});
+// });
+Route::get('/', [HomeController::class, 'index'])->name('home');
+Route::get('/about-us', [HomeController::class, 'about_us'])->name('about');
+Route::get('/contact-us', [HomeController::class, 'contact_us'])->name('contact');
+Route::get('/product', [HomeController::class, 'product'])->name('product');
+Route::get('/product-details/{id}', [HomeController::class, 'product_details'])->name('details');
+Route::get('/cart/{id}', [HomeController::class, 'cart'])->name('cart');
+Route::get('/search-products', [HomeController::class, 'searchProducts'])->name('searchProducts');
+
+
 
 // Routes for staff members (using 'stuff' guard)
 Route::middleware('auth:stuff')->group(function () {

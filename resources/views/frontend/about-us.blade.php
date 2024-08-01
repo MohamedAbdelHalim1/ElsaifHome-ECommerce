@@ -22,7 +22,7 @@
         <div class="big-nav pc">
             <nav class="navbar navbar-expand-lg bg-body-tertiary">
                 <div class="container">
-                    <a class="navbar-brand" href="index.html">
+                    <a class="navbar-brand" href="{{route('home')}}">
                         <img src="assets/images/B2B Logo-04.png" class="logo-header">
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -33,19 +33,19 @@
                     <div class="collapse navbar-collapse" id="navbarNavDropdown">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="index.html">الرئيسية</a>
+                                <a class="nav-link active" aria-current="page" href="{{route('home')}}">الرئيسية</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="about-us.html">من نحن</a>
+                                <a class="nav-link" href="{{route('about')}}">من نحن</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="products.html">المنتجات</a>
+                                <a class="nav-link" href="{{route('product')}}">المنتجات</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#services">خدماتنا</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="contact-us.html">تواصل معنا</a>
+                                <a class="nav-link" href="{{route('contact')}}">تواصل معنا</a>
                             </li>
                         </ul>
 
@@ -78,7 +78,7 @@
                 <div class="d-flex justify-content-center">
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="index.html">الرئيسية</a></li>
+                            <li class="breadcrumb-item"><a href="{{route('home')}}">الرئيسية</a></li>
                             <li class="breadcrumb-item active" aria-current="page">من نحن</li>
                         </ol>
                     </nav>
@@ -96,7 +96,7 @@
                         aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <a class="navbar-brand mt-3" href="index.html">
+                    <a class="navbar-brand mt-3" href="{{route('home')}}">
                         <img src="assets/images/B2B Logo-04.png" class="logo-header">
                     </a>
                     <div class="offcanvas offcanvas-end text-bg-tertiary" tabindex="-1" id="offcanvasDarkNavbar"
@@ -112,19 +112,19 @@
                         <div class="offcanvas-body">
                             <ul class="navbar-nav">
                                 <li class="nav-item">
-                                    <a class="nav-link" aria-current="page" href="index.html">الرئيسية</a>
+                                    <a class="nav-link" aria-current="page" href="{{route('home')}}">الرئيسية</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="about-us.html">من نحن</a>
+                                    <a class="nav-link" href="{{route('about')}}">من نحن</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="products.html">المنتجات</a>
+                                    <a class="nav-link" href="{{route('product')}}">المنتجات</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="#services">خدماتنا</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="contact-us.html">تواصل معنا</a>
+                                    <a class="nav-link" href="{{route('contact')}}">تواصل معنا</a>
                                 </li>
                             </ul>
                         </div>

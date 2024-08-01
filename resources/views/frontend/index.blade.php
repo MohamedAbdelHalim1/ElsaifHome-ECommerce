@@ -23,7 +23,7 @@
         <div class="big-nav pc">
             <nav class="navbar navbar-expand-lg bg-body-tertiary">
                 <div class="container">
-                    <a class="navbar-brand" href="index.html">
+                    <a class="navbar-brand" href="{{route('home')}}">
                         <img src="assets/images/B2B Logo-04.png" class="logo-header">
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -34,19 +34,19 @@
                     <div class="collapse navbar-collapse" id="navbarNavDropdown">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="index.html">الرئيسية</a>
+                                <a class="nav-link active" aria-current="page" href="{{route('home')}}">الرئيسية</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="{{route('about')}}">من نحن</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="products.html">المنتجات</a>
+                                <a class="nav-link" href="{{route('product')}}">المنتجات</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#services">خدماتنا</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="contact-us.html">تواصل معنا</a>
+                                <a class="nav-link" href="{{route('contact')}}">تواصل معنا</a>
                             </li>
                         </ul>
 
@@ -103,7 +103,7 @@
                         aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <a class="navbar-brand mt-3" href="index.html">
+                    <a class="navbar-brand mt-3" href="{{route('home')}}">
                         <img src="assets/images/B2B Logo-04.png" class="logo-header">
                     </a>
                     <div class="offcanvas offcanvas-end text-bg-tertiary" tabindex="-1" id="offcanvasDarkNavbar"
@@ -119,19 +119,19 @@
                         <div class="offcanvas-body">
                             <ul class="navbar-nav">
                                 <li class="nav-item">
-                                    <a class="nav-link" aria-current="page" href="index.html">الرئيسية</a>
+                                    <a class="nav-link" aria-current="page" href="{{route('home')}}">الرئيسية</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="{{route('about')}}">من نحن</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="products.html">المنتجات</a>
+                                    <a class="nav-link" href="{{route('product')}}">المنتجات</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="#services">خدماتنا</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="contact-us.html">تواصل معنا</a>
+                                    <a class="nav-link" href="{{route('contact')}}">تواصل معنا</a>
                                 </li>
                             </ul>
                         </div>
@@ -282,61 +282,19 @@
             </div>
             <div class="pc">
                 <div class="gallery-category">
-                    <div class="slide">
-                        <div class="layer1">
-                            <img src="assets/images/categories-banners1.jpg" class="rounded-1" style="width: 100%;">
-                            <div class="layer2 rounded-1">
-                                <h3>
-                                    أواني الضيافة
-                                </h3>
-                                <button class="btn button-categ w-50 p-3">رؤية المزيد</button>
+                    @foreach($categories as $category)
+                        <div class="slide">
+                            <div class="layer1">
+                                <img src="{{$category->photo}}" class="rounded-1" style="width: 100%;">
+                                <div class="layer2 rounded-1">
+                                    <h3>
+                                        {{$category->name}} 
+                                    </h3>
+                                    <a href="{{ route('product', ['category_id' => $category->id]) }}"><button class="btn button-categ w-50 p-3">رؤية المزيد</button></a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="slide">
-                        <div class="layer1">
-                            <img src="assets/images/categories-banners2.jpg" class="rounded-1" style="width: 100%;">
-                            <div class="layer2 rounded-1">
-                                <h3>
-                                    أدوات المائدة
-                                </h3>
-                                <button class="btn button-categ w-50 p-3">رؤية المزيد</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slide">
-                        <div class="layer1">
-                            <img src="assets/images/categories-banners3.jpg" class="rounded-1" style="width: 100%;">
-                            <div class="layer2 rounded-1">
-                                <h3>
-                                    السخانات
-                                </h3>
-                                <button class="btn button-categ w-50 p-3">رؤية المزيد</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slide">
-                        <div class="layer1">
-                            <img src="assets/images/categories-banners4.jpg" class="rounded-1" style="width: 100%;">
-                            <div class="layer2 rounded-1">
-                                <h3>
-                                    أدوات الطبخ
-                                </h3>
-                                <button class="btn button-categ w-50 p-3">رؤية المزيد</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slide">
-                        <div class="layer1">
-                            <img src="assets/images/categories-banners5.jpg" class="rounded-1" style="width: 100%;">
-                            <div class="layer2 rounded-1">
-                                <h3>
-                                    الكهربائيات
-                                </h3>
-                                <button class="btn button-categ w-50 p-3">رؤية المزيد</button>
-                            </div>
-                        </div>
-                    </div>
+                    @endforeach
                 </div>
             </div>
 
@@ -494,13 +452,14 @@
                 </div>
             </div>
             <div class="row justify-content-center">
+                @foreach($products as $product)
                 <div class="col-xl-3 mb-4">
-                    <img src="assets/images/new-set-of-black-saucepans-isolated-on-white.png"
+                    <img src="{{$product->photo}}"
                         class="rounded-1 bg-secondary bg-opacity-10" style="width:280; height: 280px;">
                     <div class="d-flex justify-content-start">
                         <div>
                             <h5>
-                                طقم سكاكين
+                                 {{$product->name}}
                             </h5>
                             <button class="btn cart-button">
                                 اضافة الى السلة
@@ -508,113 +467,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-3 mb-4">
-                    <img src="assets/images/new-set-of-black-saucepans-isolated-on-white.png"
-                        class="rounded-1 bg-secondary bg-opacity-10" style="width:280; height: 280px;">
-                    <div class="d-flex justify-content-start">
-                        <div>
-                            <h5>
-                                طقم سكاكين
-                            </h5>
-                            <button class="btn cart-button">
-                                اضافة الى السلة
-                            </button>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="col-xl-3 mb-4">
-                    <img src="assets/images/new-set-of-black-saucepans-isolated-on-white.png"
-                        class="rounded-1 bg-secondary bg-opacity-10" style="width:280; height: 280px;">
-                    <div class="d-flex justify-content-start">
-                        <div>
-                            <h5>
-                                طقم سكاكين
-                            </h5>
-                            <button class="btn cart-button">
-                                اضافة الى السلة
-                            </button>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="col-xl-3 mb-4">
-                    <img src="assets/images/new-set-of-black-saucepans-isolated-on-white.png"
-                        class="rounded-1 bg-secondary bg-opacity-10" style="width:280; height: 280px;">
-                    <div class="d-flex justify-content-start">
-                        <div>
-                            <h5>
-                                طقم سكاكين
-                            </h5>
-                            <button class="btn cart-button">
-                                اضافة الى السلة
-                            </button>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-xl-3 mb-4">
-                    <img src="assets/images/new-set-of-black-saucepans-isolated-on-white.png"
-                        class="rounded-1 bg-secondary bg-opacity-10" style="width:280; height: 280px;">
-                    <div class="d-flex justify-content-start">
-                        <div>
-                            <h5>
-                                طقم سكاكين
-                            </h5>
-                            <button class="btn cart-button">
-                                اضافة الى السلة
-                            </button>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="col-xl-3 mb-4">
-                    <img src="assets/images/new-set-of-black-saucepans-isolated-on-white.png"
-                        class="rounded-1 bg-secondary bg-opacity-10" style="width:280; height: 280px;">
-                    <div class="d-flex justify-content-start">
-                        <div>
-                            <h5>
-                                طقم سكاكين
-                            </h5>
-                            <button class="btn cart-button">
-                                اضافة الى السلة
-                            </button>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="col-xl-3 mb-4">
-                    <img src="assets/images/new-set-of-black-saucepans-isolated-on-white.png"
-                        class="rounded-1 bg-secondary bg-opacity-10" style="width:280; height: 280px;">
-                    <div class="d-flex justify-content-start">
-                        <div>
-                            <h5>
-                                طقم سكاكين
-                            </h5>
-                            <button class="btn cart-button">
-                                اضافة الى السلة
-                            </button>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="col-xl-3 mb-4">
-                    <img src="assets/images/new-set-of-black-saucepans-isolated-on-white.png"
-                        class="rounded-1 bg-secondary bg-opacity-10" style="width:280; height: 280px;">
-                    <div class="d-flex justify-content-start">
-                        <div>
-                            <h5>
-                                طقم سكاكين
-                            </h5>
-                            <button class="btn cart-button">
-                                اضافة الى السلة
-                            </button>
-                        </div>
-
-                    </div>
-                </div>
+                @endforeach
             </div>
         </div>
     </section>

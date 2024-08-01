@@ -478,6 +478,11 @@ footer .logo-footer {
         height: 400px;
     }
 
+    .navbar-nav li
+    {
+        margin: 0px;
+    }
+
     h1 {
         font-size: 30px;
         line-height: 50px;
