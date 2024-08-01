@@ -24,7 +24,9 @@ class HomeController extends Controller
     }
     public function product(Request $request)
     {
-        $category_id = $request->query('category_id', Category::first()->id); // Default to the first category if none is selected
+        $category = Category::first();
+        $id = $category ? $category->id : null;
+        $category_id = $request->query('category_id', $id); // Default to the first category if none is selected
         $products = Product::where('category_id', $category_id)->get();
         $categories = Category::all();
 
