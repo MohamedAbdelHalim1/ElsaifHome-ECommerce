@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function () {
     changeBackgroundImage();
 
     // Automatically change the background image every 3 seconds
-   
+
     setInterval(() => {
         slide.classList.remove('active');
         setTimeout(changeBackgroundImage, 1700); // Change image after fade out
@@ -108,7 +108,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     counters.forEach(counter => {
         const stopValue = parseInt(counter.getAttribute('data-stop'));
-        let duration = 9000; // Duration in milliseconds for the counter animation
+        let duration = 2000; // Duration in milliseconds for the counter animation
         let startTime = null;
 
         function animateCounter(timestamp) {
@@ -126,5 +126,57 @@ document.addEventListener('DOMContentLoaded', () => {
 
         requestAnimationFrame(animateCounter);
     });
+
+    ////////////////////////////////////////////////////////
+
+    const inputField = document.getElementById('inputField');
+    const plusButton = document.getElementById('plusButton');
+
+    plusButton.addEventListener('click', () => {
+        let currentValue = parseInt(inputField.value, 10);
+        inputField.value = currentValue + 1;
+    });
+
+    ////////////////////////////////////////////////////////
+
+    const showSectionBtn = document.getElementById('showSectionBtn');
+    const hiddenSection = document.getElementById('hiddenSection');
+
+    showSectionBtn.addEventListener('click', () => {
+        hiddenSection.classList.toggle('hidden');
+    });
+
+    ////////////////////////////////////////////////////
+
 });
+
+
+////////////////////////////////////////////
+
+
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("openModalBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal
+btn.onclick = function () {
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function () {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function (event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
 

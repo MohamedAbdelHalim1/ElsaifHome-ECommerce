@@ -16,6 +16,8 @@ return new class extends Migration
             $table->string('name');
             $table->string('photo')->nullable();
             $table->foreignId('category_id')->constrained()->onDelete('cascade');
+            $table->string('sku')->nullable();
+            $table->integer('quantity')->default(0);
             $table->timestamps();
         });
     }

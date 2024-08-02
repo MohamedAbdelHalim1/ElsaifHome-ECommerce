@@ -17,7 +17,7 @@ class ProductController extends Controller
     public function index(Request $request)
     {
         if ($request->ajax()) {
-            $products = Product::select(['id', 'name', 'photo' , 'category_id']);
+            $products = Product::select(['id', 'name', 'photo' , 'category_id','sku','quantity']);
             return DataTables::of($products)
                 ->addColumn('photo', function ($product) {
                     // Ensure the image path is correctly concatenated
@@ -62,6 +62,8 @@ class ProductController extends Controller
             'name' => 'required|string|max:255',
             'photo' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
             'category_id' => 'required|exists:categories,id',
+            'sku'=>'required',
+            'quantity'=>'required|numeric',
         ]);
 
         if ($validator->fails()) {
@@ -83,6 +85,8 @@ class ProductController extends Controller
         $product = new Product();
         $product->name = $request->input('name');
         $product->photo = $photoPath;
+        $product->sku = $request->sku;
+        $product->quantity = $request->quantity;
         $product->category_id = $request->category_id;
         $product->save();
 
@@ -119,7 +123,8 @@ class ProductController extends Controller
             'name' => 'required|string|max:255',
             'photo' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
             'category_id' => 'required|exists:categories,id',
-
+            'sku'=>'required',
+            'quantity'=>'required|numeric',
         ]);
 
         if ($validator->fails()) {
@@ -131,7 +136,8 @@ class ProductController extends Controller
         $product = Product::find($id);
         $product->name = $request->input('name');
         $product->category_id = $request->category_id;
-
+        $product->sku = $request->sku;
+        $product->quantity = $request->quantity;
         if ($request->hasFile('photo')) {
             $photo = $request->file('photo');
             $photoName = time() . '.' . $photo->getClientOriginalExtension();

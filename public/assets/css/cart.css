@@ -113,8 +113,132 @@ h1 {
     color: #b82c2c !important;
 }
 
+.orders {
+    margin: 5% 0% 3% 0%;
+}
+
+table th {
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 20px!important;
+}
+
+table td {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.image-table {
+    width: 120px;
+    height: 120px;
+}
+
+table td i {
+    cursor: pointer;
+    color: #b82c2c;
+}
 
 
+table td i:hover {
+    cursor: pointer;
+    color: #b44a4a;
+}
+
+
+.input-container {
+    display: flex;
+    align-items: center;
+}
+
+#inputField {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 0px 2px 2px 0px;
+    outline: none;
+}
+
+#plusButton {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-left: none;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    border-radius: 2px 0px 0px 2px;
+}
+
+#plusButton:hover {
+    background-color: #45a049;
+}
+
+.contact
+{
+    background-color: rgba(204, 204, 204,.3);
+    padding: 50px;
+}
+
+.hidden{
+    display: none;
+}
+
+.contact-us h2 {
+    font-size: 30px;
+    font-weight: bolder;
+    line-height: 1.1em;
+    color: #11232A;
+    margin-bottom: 25px;
+    font-style: normal;
+}
+
+.contact-us p {
+    color: #7A7A7A;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.submit-mail
+{
+    background-color: #242e40;
+    color: #FFFFFF;
+    border-radius: 2px;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.submit-mail:hover
+{
+    background-color: #FFFFFF;
+    border: 2px solid #242e40;
+}
+
+.contact h3{
+    font-weight: bolder;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.contact p{
+    font-size: 13px;
+    margin-bottom: 40px;
+}
+
+
+
+.order-button
+{
+    background-color: #FFFFFF;
+    border: 2px solid #242e40;
+    border-radius: 2px;
+    padding: 10px;
+}
+
+.order-button:hover
+{
+    background-color: #242e40;
+    color: #FFFFFF;
+}
 
 footer {
     background-color: #242e40;
@@ -185,6 +309,66 @@ footer .logo-footer {
 }
 
 
+/* The Modal (background) */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 999999;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, .8);
+    /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: rgba(0, 0, 0, 0);
+    margin: 15% auto;
+    /* 15% from the top and centered */
+    padding: 20px;
+    border: none;
+    width: 80%;
+    /* Could be more or less, depending on screen size */
+}
+
+#searchInputModal {
+    padding: 30px;
+    width: 250px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+}
+
+
+/* The Close Button */
+.close {
+    color: #aaa !important;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    margin-right: 5%;
+    margin-top: 3%;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
 @media screen and (max-width:1000px) {
     * {
         overflow-x: hidden !important;
@@ -233,9 +417,8 @@ footer .logo-footer {
     .sub-main {
         margin-top: 20%;
     }
-    
-    .navbar-nav li
-    {
+
+    .navbar-nav li {
         margin: 0px;
     }
 
@@ -268,7 +451,7 @@ footer .logo-footer {
         margin-bottom: 2.5rem;
         font-size: 15px;
     }
-    
+
     small {
         text-align: center;
         justify-content: center;
@@ -285,5 +468,5 @@ footer .logo-footer {
         margin-top: calc(-1* var(--bs-gutter-y));
         margin-right: calc(-0.5* var(--bs-gutter-x));
         margin-left: calc(-0.5* var(--bs-gutter-x));
-    }  
+    }
 }

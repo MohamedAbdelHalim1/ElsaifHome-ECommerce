@@ -57,7 +57,7 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="" href="#">
+                                <a class="" href="{{route('cart')}}">
                                     <i class="fa-solid fa-bag-shopping"></i>
                                 </a>
                             </li>
@@ -182,22 +182,128 @@
             </div>
         </div>
     </section>
+   
 
+    <section class="categories rtl mt-xl-5 mt-lg-5 mt-md-5">
+        <div class="container text-center">
+            <div class="row justify-content-center mb-2">
+                <div class="col-xl-6 col-lg-6 col-lg-8">
+                    <h2>
+                        أكتشف مجموعتنا
+                    </h2>
+                    <p class="mt-3">
+                        العميل مهم جدًا، العميل سيتبعه العميل. كأرض الأرض الحداد ولا عريف الأرض وسادة الأسد.
+                        العميل سيتبعه العميل. كأرض الأرض الحداد ولا عريف الأرض وسادة
+                    </p>
+                </div>
+            </div>
+            <div class="pc">
+                <div class="gallery-category">
+                    @foreach($categories as $category)
+                        <div class="slide">
+                            <div class="layer1">
+                                <a href="{{ route('product', ['category_id' => $category->id]) }}">
+                                    <img src="{{$category->photo}}" class="rounded-1" style="width: 100%;">
+                                </a>
+                                <div class="layer2 rounded-1">
+                                    <h3>
+                                        {{$category->name}} 
+                                    </h3>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    @endforeach
+                </div>
+            </div>
+
+            <div class="mob">
+                <div class="gallery-category-mob">
+                    <div class="slide mb-3">
+                        <div class="layer1">
+                            <a href="products.html">
+                                <img src="assets/images/categories-banners1.jpg" class="rounded-1 scale-image"
+                                    style="width: 100%;">
+                            </a>
+                            <div class="layer2 rounded-1">
+                                <h3>
+                                    أواني الضيافة
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide mb-3">
+                        <div class="layer1">
+                            <a href="products.html">
+                                <img src="assets/images/categories-banners2.jpg" class="rounded-1 scale-image"
+                                    style="width: 100%;">
+                            </a>
+                            <div class="layer2 rounded-1">
+                                <h3>
+                                    أدوات المائدة
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide mb-3">
+                        <div class="layer1">
+                            <a href="products.html">
+                                <img src="assets/images/categories-banners3.jpg" class="rounded-1 scale-image"
+                                    style="width: 100%;">
+                            </a>
+                            <div class="layer2 rounded-1">
+                                <h3>
+                                    السخانات
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide mb-3">
+                        <div class="layer1">
+                            <a href="products.html">
+                                <img src="assets/images/categories-banners4.jpg" class="rounded-1 scale-image"
+                                    style="width: 100%;">
+                            </a>
+                            <div class="layer2 rounded-1">
+                                <h3>
+                                    أدوات الطبخ
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide mb-3">
+                        <div class="layer1">
+                            <a href="products.html">
+                                <img src="assets/images/categories-banners5.jpg" class="rounded-1 scale-image"
+                                    style="width: 100%;">
+                            </a>
+                            <div class="layer2 rounded-1">
+                                <h3>
+                                    الكهربائيات
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
     <section class="brands-logo" id="partners">
         <div class="container text-center">
             <div class="col-xl-12">
-
                 <div class="text-center">
-                    <h2>
+                    <h3 class="mb-5">
                         علامتنا التجارية
-                    </h2>
+                    </h3>
                 </div>
                 <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <div class="d-flex justify-content-center">
                                 <div style="width: 20%;">
-                                    <img src="assets/images/Trademarks/brandlogo1.png" style="width: 100%">
+                                    <img src="assets/images/Trademarks/brandlogo6.png" style="width: 100%">
                                 </div>
                                 <div style="width: 20%;">
                                     <img src="assets/images/Trademarks/brandlogo2.png" style="width: 100%;">
@@ -225,7 +331,7 @@
                                     <img src="assets/images/Trademarks/brandlogo9.png" style="width: 100%;">
                                 </div>
                                 <div style="width: 20%;">
-                                    <img src="assets/images/Trademarks/brandlogo13.png" style="width: 100%;">
+                                    <img src="assets/images/Trademarks/brandlogo12.png" style="width: 100%;">
                                 </div>
                                 <div style="width: 20%;">
                                     <img src="assets/images/Trademarks/brandlogo14.png" style="width: 100%;">
@@ -267,98 +373,73 @@
         </div>
     </section>
 
-    <section class="categories rtl">
+    
+
+    <section class="rtl p-xl-5 p-lg-5 p-md-5 flags" style="background-color: rgb(246, 246, 246);">
         <div class="container text-center">
-            <div class="row justify-content-center mb-2">
-                <div class="col-xl-6 col-lg-6 col-lg-8">
-                    <h2>
-                        أكتشف مجموعتنا
-                    </h2>
-                    <p class="mt-3">
-                        العميل مهم جدًا، العميل سيتبعه العميل. كأرض الأرض الحداد ولا عريف الأرض وسادة الأسد.
-                        العميل سيتبعه العميل. كأرض الأرض الحداد ولا عريف الأرض وسادة
-                    </p>
-                </div>
-            </div>
-            <div class="pc">
-                <div class="gallery-category">
-                    @foreach($categories as $category)
-                        <div class="slide">
-                            <div class="layer1">
-                                <img src="{{$category->photo}}" class="rounded-1" style="width: 100%;">
-                                <div class="layer2 rounded-1">
-                                    <h3>
-                                        {{$category->name}} 
-                                    </h3>
-                                    <a href="{{ route('product', ['category_id' => $category->id]) }}"><button class="btn button-categ w-50 p-3">رؤية المزيد</button></a>
+            <div class="row justify-content-center">
+                <h3 class="mb-xl-5 mb-lg-5 mb-md-5">
+                    توريدات من انحاء العالم
+                </h3>
+                <div class="col-xl-12">
+                    <div id="carouselExampleCaptions" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="d-flex justify-content-center">
+                                    <div style="width: 17%;">
+                                        <img src="assets/images/flags/asbinya.png" style="width: 100%">
+                                    </div>
+                                    <div style="width: 17%;">
+                                        <img src="assets/images/flags/Brazil.png" style="width: 100%;">
+                                    </div>
+                                    <div style="width: 17%;">
+                                        <img src="assets/images/flags/China.png" style="width: 100%;">
+                                    </div>
+                                    <div style="width: 17%;">
+                                        <img src="assets/images/flags/Corya.png" style="width: 100%;">
+                                    </div>
+                                    <div style="width: 17%;">
+                                        <img src="assets/images/flags/France.png" style="width: 100%;">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="d-flex justify-content-center">
+                                    <div style="width: 17%;">
+                                        <img src="assets/images/flags/Germany.png" style="width: 100%">
+                                    </div>
+                                    <div style="width: 17%;">
+                                        <img src="assets/images/flags/Italy.png" style="width: 100%;">
+                                    </div>
+                                    <div style="width: 17%;">
+                                        <img src="assets/images/flags/Poland.png" style="width: 100%;">
+                                    </div>
+                                    <div style="width: 17%;">
+                                        <img src="assets/images/flags/Russia.png" style="width: 100%;">
+                                    </div>
+                                    <div style="width: 17%;">
+                                        <img src="assets/images/flags/Thailand.png" style="width: 100%;">
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    @endforeach
-                </div>
-            </div>
-
-            <div class="mob">
-                <div class="gallery-category-mob">
-                    <div class="slide mb-3">
-                        <div class="layer1">
-                            <img src="assets/images/categories-banners1.jpg" class="rounded-1" style="width: 100%;">
-                            <div class="layer2 rounded-1">
-                                <h3>
-                                    أواني الضيافة
-                                </h3>
-                                <button class="btn button-categ w-50 p-3">رؤية المزيد</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slide mb-3">
-                        <div class="layer1">
-                            <img src="assets/images/categories-banners2.jpg" class="rounded-1" style="width: 100%;">
-                            <div class="layer2 rounded-1">
-                                <h3>
-                                    أدوات المائدة
-                                </h3>
-                                <button class="btn button-categ w-50 p-3">رؤية المزيد</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slide mb-3">
-                        <div class="layer1">
-                            <img src="assets/images/categories-banners3.jpg" class="rounded-1" style="width: 100%;">
-                            <div class="layer2 rounded-1">
-                                <h3>
-                                    السخانات
-                                </h3>
-                                <button class="btn button-categ w-50 p-3">رؤية المزيد</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slide mb-3">
-                        <div class="layer1">
-                            <img src="assets/images/categories-banners4.jpg" class="rounded-1" style="width: 100%;">
-                            <div class="layer2 rounded-1">
-                                <h3>
-                                    أدوات الطبخ
-                                </h3>
-                                <button class="btn button-categ w-50 p-3">رؤية المزيد</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slide mb-3">
-                        <div class="layer1">
-                            <img src="assets/images/categories-banners5.jpg" class="rounded-1" style="width: 100%;">
-                            <div class="layer2 rounded-1">
-                                <h3>
-                                    الكهربائيات
-                                </h3>
-                                <button class="btn button-categ w-50 p-3">رؤية المزيد</button>
-                            </div>
-                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+
 
     <section id="services" class="quality rtl mt-xl-5 mt-lg-5 mt-md-5">
         <div class="container">
@@ -438,6 +519,8 @@
         </div>
     </section>
 
+
+
     <section class="popular-product rtl mt-xl-5 mt-lg-5 mt-md-5">
         <div class="container text-center">
             <div class="row justify-content-center mb-3">
@@ -473,29 +556,7 @@
     </section>
 
 
-    <!--
     
-        <section class="offers-banner">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-xl-6 col-lg-6">
-                    <a href="#">
-                        <img src="assets/images/offer-banner-1.jpg" class="rounded-1" style="width: 100%;">
-                    </a>
-                </div>
-                <div class="col-xl-6 col-lg-6">
-                    <a href="#">
-                        <img src="assets/images/offer-banner-2.jpg" class="rounded-1" style="width: 100%;">
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    
-    -->
-
-
     <section class="rtl mt-xl-5 mt-lg-5 mt-md-5 sub-banner">
         <div class="row justify-content-center text-center">
             <div class="col-12 position-relative">
@@ -514,6 +575,8 @@
         </div>
     </section>
 
+
+    
     <section class="blogs rtl mt-xl-5 mt-lg-5 mt-md-5">
         <div class="container">
             <div class="row justify-content-center mb-3 text-center">
@@ -572,6 +635,62 @@
                         ولكن لكي ترى من أين يأتي كل هذا الخطأ الناتج عن أولئك الذين يتهمون اللذة ويمتدحون الألم، سأكشف
                         عن الأمر برمته، وتلك الأشياء ذاتها التي منها...
                     </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    
+    <section class="rtl mt-xl-5 mt-lg-5 mt-md-5 features">
+        <div class="container text-center">
+            <div class="d-flex justify-content-center">
+                <div class="icons-features">
+                    <div class="d-flex justify-content-center">
+                        <div class="icons-features-details1">
+                            <img src="assets/images/icon-features1.png" class="features-image">
+                        </div>
+                        <div class="icons-features-details2">
+                            <h5>صفقات كبيرة</h5>
+                            <p>استرداد نقدي يزيد عن 40%</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="line"></div>
+                <div class="icons-features">
+                    <div class="d-flex justify-content-center">
+                        <div class="icons-features-details1">
+                            <img src="assets/images/icon-features2.png" class="features-image">
+                        </div>
+                        <div class="icons-features-details2">
+                            <h5> الاسترجاع والاستبدال</h5>
+                            <p> آمن بنسبة 100% </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="line"></div>
+                <div class="icons-features">
+                    <div class="d-flex justify-content-center">
+                        <div class="icons-features-details1">
+                            <img src="assets/images/icon-features3.png" class="features-image">
+                        </div>
+                        <div class="icons-features-details2">
+                            <h5>شحن </h5>
+                            <p>شحن لكل دول الخليج</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="line"></div>
+                <div class="icons-features">
+                    <div class="d-flex justify-content-center">
+                        <div class="icons-features-details1">
+                            <img src="assets/images/icon-features4.png" class="features-image">
+                        </div>
+                        <div class="icons-features-details2">
+                            <h5>سرعة توصيل</h5>
+                            <p>توصيل خلال48 ساعة</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -782,123 +901,31 @@
     </section>
 
 
-    <section class="rtl mt-xl-5 mt-lg-5 mt-md-5 features">
-        <div class="container text-center">
-            <div class="d-flex justify-content-center">
-                <div class="icons-features">
-                    <div class="d-flex justify-content-center">
-                        <div class="icons-features-details1">
-                            <img src="assets/images/icon-features1.png" class="features-image">
-                        </div>
-                        <div class="icons-features-details2">
-                            <h5>صفقات كبيرة</h5>
-                            <p>استرداد نقدي يزيد عن 40%</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="line"></div>
-                <div class="icons-features">
-                    <div class="d-flex justify-content-center">
-                        <div class="icons-features-details1">
-                            <img src="assets/images/icon-features2.png" class="features-image">
-                        </div>
-                        <div class="icons-features-details2">
-                            <h5> الاسترجاع والاستبدال</h5>
-                            <p> آمن بنسبة 100% </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="line"></div>
-                <div class="icons-features">
-                    <div class="d-flex justify-content-center">
-                        <div class="icons-features-details1">
-                            <img src="assets/images/icon-features3.png" class="features-image">
-                        </div>
-                        <div class="icons-features-details2">
-                            <h5>شحن </h5>
-                            <p>شحن لكل دول الخليج</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="line"></div>
-                <div class="icons-features">
-                    <div class="d-flex justify-content-center">
-                        <div class="icons-features-details1">
-                            <img src="assets/images/icon-features4.png" class="features-image">
-                        </div>
-                        <div class="icons-features-details2">
-                            <h5>سرعة توصيل</h5>
-                            <p>توصيل خلال48 ساعة</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <section class="mt-xl-5 mt-lg-5 mt-md-5 rtl p-xl-5 p-lg-5 p-md-5 flags" style="background-color: rgb(246, 246, 246);">
-        <div class="container text-center">
+    <!--
+    
+        <section class="offers-banner">
+        <div class="container">
             <div class="row justify-content-center">
-                <h3 class="mb-xl-5 mb-lg-5 mb-md-5">
-                    اعلام
-                </h3>
-                <div class="col-xl-12">
-                    <div id="carouselExampleCaptions" class="carousel slide">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <div class="d-flex justify-content-center">
-                                    <div style="width: 17%;">
-                                        <img src="assets/images/flags/asbinya.png" style="width: 100%">
-                                    </div>
-                                    <div style="width: 17%;">
-                                        <img src="assets/images/flags/Brazil.png" style="width: 100%;">
-                                    </div>
-                                    <div style="width: 17%;">
-                                        <img src="assets/images/flags/China.png" style="width: 100%;">
-                                    </div>
-                                    <div style="width: 17%;">
-                                        <img src="assets/images/flags/Corya.png" style="width: 100%;">
-                                    </div>
-                                    <div style="width: 17%;">
-                                        <img src="assets/images/flags/France.png" style="width: 100%;">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="d-flex justify-content-center">
-                                    <div style="width: 17%;">
-                                        <img src="assets/images/flags/Germany.png" style="width: 100%">
-                                    </div>
-                                    <div style="width: 17%;">
-                                        <img src="assets/images/flags/Italy.png" style="width: 100%;">
-                                    </div>
-                                    <div style="width: 17%;">
-                                        <img src="assets/images/flags/Poland.png" style="width: 100%;">
-                                    </div>
-                                    <div style="width: 17%;">
-                                        <img src="assets/images/flags/Russia.png" style="width: 100%;">
-                                    </div>
-                                    <div style="width: 17%;">
-                                        <img src="assets/images/flags/Thailand.png" style="width: 100%;">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-                            data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-                            data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
-                    </div>
+                <div class="col-xl-6 col-lg-6">
+                    <a href="#">
+                        <img src="assets/images/offer-banner-1.jpg" class="rounded-1" style="width: 100%;">
+                    </a>
+                </div>
+                <div class="col-xl-6 col-lg-6">
+                    <a href="#">
+                        <img src="assets/images/offer-banner-2.jpg" class="rounded-1" style="width: 100%;">
+                    </a>
                 </div>
             </div>
         </div>
     </section>
+    
+    
+    -->
+
+
+
 
 
 

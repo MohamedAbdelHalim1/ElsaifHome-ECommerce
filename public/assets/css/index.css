@@ -143,14 +143,14 @@ h1 {
 }
 
 .numbers {
-    padding: 60px 20px;
+    padding: 35px 20px;
 }
 
 .numbers h3 {
     color: #242e40;
     font-size: 22px;
     font-weight: bolder;
-    margin-top: 30px;
+    margin-top: 20px;
     font-style: normal;
     letter-spacing: 1px;
 }
@@ -177,7 +177,11 @@ h1 {
 }
 
 .brands-logo {
-    margin: 80px 0px;
+    margin: 50px 0px;
+}
+
+hr{
+    color: #11232A!important;
 }
 
 h2 {
@@ -204,6 +208,17 @@ h2 {
 .categories .slide {
     width: 19%;
     margin: 5px;
+    overflow: hidden;
+}
+
+.scale-image {
+    width: 300px;
+    height: auto;
+    transition: transform 0.7s ease-in-out;
+}
+
+.scale-image:hover {
+    transform: scale(1.5);
 }
 
 
@@ -386,8 +401,8 @@ footer ul li {
     font-weight: 300;
 }
 
-hr {
-    color: #FFFFFF;
+footer hr {
+    color: #FFFFFF!important;
 }
 
 footer .logo-footer {
@@ -407,6 +422,56 @@ footer .logo-footer {
     margin-top: calc(-1* var(--bs-gutter-y));
     margin-right: calc(-0.5* var(--bs-gutter-x));
     margin-left: calc(-0.5* var(--bs-gutter-x));
+}
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 999999; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,.8); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: rgba(0,0,0,0); 
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: none;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+#searchInputModal {
+    padding: 30px;
+    width: 250px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+}
+
+
+/* The Close Button */
+.close {
+    color: #aaa!important;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    margin-right: 5%;
+    margin-top: 3%;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 @media screen and (max-width:1000px) {
@@ -647,3 +712,9 @@ footer .logo-footer {
         margin-left: calc(-0.5* var(--bs-gutter-x));
     }  
 }
+
+
+
+
+
+
